@@ -17,7 +17,7 @@ class Song
 
   elsif  self.artist != 0
       nil
-    end 
+    end
   end
 
 end
