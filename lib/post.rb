@@ -1,2 +1,6 @@
 class Post
-end 
+
+  def initialize(title)
+  end 
+
+end
