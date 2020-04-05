@@ -6,6 +6,9 @@ class Artist
   end
 
   def songs
+    Song.all.select do
+      Song.artist == self 
+    end
   end
 
   def add_song(song)
@@ -18,6 +21,6 @@ class Artist
   end
 
   def self.song_count
-  end 
+  end
 
 end
