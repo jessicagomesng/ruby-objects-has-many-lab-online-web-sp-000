@@ -5,10 +5,11 @@ class Post
 
   def initialize(title)
     @title = title
-    @@all << self 
+    @@all << self
   end
 
   def self.all
-  end 
+    @@all 
+  end
 
 end
