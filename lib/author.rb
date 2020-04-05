@@ -9,11 +9,10 @@ class Author
   def posts
     Post.all.select do |post|
       post.author == self
-    end 
+    end
   end
 
   def add_post(post)
-    post = Post.new(post)
     post.author = self
   end
 
